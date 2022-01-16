@@ -1,9 +1,9 @@
 {
-  "name": "Toggle Alacritty",
-  "description": "Toggles Alacritty window via hotkey: Alt+z\n\nIf Alacritty is not launched, attempts to start it (/usr/bin/alacritty)\n\nWorks under both Wayland and X11\n\nTo change hotkey please follow instruction in the README.md:",
-  "uuid": "toggle-alacritty@itstime.tech",
-  "url": "https://github.com/axxapy/gnome-alacritty-toggle",
-  "settings-schema": "org.gnome.shell.extensions.toggle-alacritty",
+  "name": "Toggle Terminal",
+  "description": "Toggles terminal window via hotkey: Alt+z\n\nIf terminal is not launched, attempts to start it (/usr/bin/gnome-terminal)\n\nWorks under both Wayland and X11\n\nTo change hotkey please follow instruction in the README.md:",
+  "uuid": "toggle-terminal@sysdump.net",
+  "url": "https://github.com/terminal/gnome-terminal-toggle",
+  "settings-schema": "org.gnome.shell.extensions.toggle-terminal",
   "shell-version": [
     "3.38", "40", "41"
   ]
