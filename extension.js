@@ -41,7 +41,12 @@ class Extension {
 		} else if (win.minimized && !onCurrentMonitor) {
 			win.move_to_monitor(currentMonitor);
 		}
+		// https://gitlab.gnome.org/GNOME/mutter/-/blob/main/src/core/keybindings.c#L3125
+		let work_area = win.get_work_area_current_monitor();
+		let frame_rect = win.get_frame_rect();
 		activeWorkspace.activate_with_focus(win, global.get_current_time());
+		win.move_frame( true, work_area.x + (work_area.width  - frame_rect.width ) / 2,
+			work_area.y + (work_area.height - frame_rect.height) / 2);
 	}
 
 	enable() {
