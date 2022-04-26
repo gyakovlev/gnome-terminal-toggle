@@ -5,6 +5,6 @@
   "url": "https://github.com/terminal/gnome-terminal-toggle",
   "settings-schema": "org.gnome.shell.extensions.toggle-terminal",
   "shell-version": [
-    "3.38", "40", "41"
+    "3.38", "40", "41", "42"
   ]
 }
